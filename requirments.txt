@@ -1,0 +1,9 @@
+selenium
+webdriver-manager
+beautifulsoup4
+psycopg2-binary
+selenium-stealth
+holidays
+requests
+pandas-market-calendars
+python-dotenv
