@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto ETF Flows</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+  <h1>Crypto ETF Flows</h1>
+ 
+  {% for crypto in crypto_keys %}
+  <h2>{{ crypto }}</h2>
+    <div>
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            {% for ETF_name in etf_data[0][crypto].keys() %}
+            <th>{{ ETF_name }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for day in etf_data %}
+        
+        <tr>
+            <td>{{ day.date }}</td>
+            {% for ETF_name, flow in day[crypto].items() %}
+            <td class="{{ 'pos' if flow > 0 else 'neg' if flow < 0 else '' }}">
+            {{ fmt_flow(flow) if flow != 0 else '0' }}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+  {% endfor %}
+</body>
+</html>

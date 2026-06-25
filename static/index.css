@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background: #0e1117;
+  color: #ffffff;
+  padding: 2.5rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Page title ── */
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #2a3444;
+}
+
+/* ── Crypto section headings ── */
+h2 {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 2.5rem 0 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #2a6fdb;
+}
+
+/* ── Table wrapper ── */
+div {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  table-layout: fixed;
+}
+
+/* ── Header row ── */
+thead th {
+  padding: 0.6rem 1.1rem;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #161d2a;
+  border-bottom: 1px solid #2a3444;
+}
+
+/* ── Body rows ── */
+tbody tr {
+  border-bottom: 1px solid #1a2230;
+  transition: background 0.08s;
+}
+
+tbody tr:hover { background: #1a2540; }
+
+tbody td {
+  padding: 0.5rem 1.1rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: #ffffff;
+}
+
+/* ── Flow value coloring ── */
+tbody td.pos { color: #3db88a; }
+tbody td.neg { color: #e05555; }
