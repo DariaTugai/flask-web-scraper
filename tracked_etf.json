@@ -1,0 +1,47 @@
+{
+    "ethereum": [
+        "ETHE",
+        "ETH",
+        "ETHA",
+        "ETHW",
+        "FETH",
+        "ETHV",
+        "EZET",
+        "ETHB",
+        "TETH",
+        "QETH"
+    ],
+    "bitcoin": [
+        "GBTC",
+        "IBIT",
+        "FBTC",
+        "ARKB",
+        "BITB",
+        "BTCO",
+        "EZBC",
+        "BTC",
+        "BTCW",
+        "MSBT",
+        "HODL",
+        "BRRR"
+    ],
+    "solana": [
+        "BSOL",
+        "FSOL",
+        "TSOL",
+        "GSOL",
+        "VSOL"
+    ],
+    "xrp": [
+        "XRPC",
+        "XRPZ",
+        "TOXR",
+        "XRP",
+        "GXRP"
+    ],
+    "hype": [
+        "HYPG",
+        "THYP",
+        "BHYP"
+    ]
+}
